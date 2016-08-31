@@ -41,7 +41,7 @@ class StringEditor
         }
     }
 
-    public void Replace(
+    public StringEditor Replace(
         string old, string to,
         StringComparison comp = StringComparison.CurrentCulture)
     {
@@ -55,6 +55,8 @@ class StringEditor
                 new StringEditCommand(foundAt, old.Length, to));
             i = foundAt + old.Length;
         }
+        
+        return this;
     }
 
     public string Commit()
