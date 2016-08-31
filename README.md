@@ -1,0 +1,2 @@
+# StringEditor.cs
+StringEditor
