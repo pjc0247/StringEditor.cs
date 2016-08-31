@@ -1,5 +1,8 @@
 # StringEditor.cs
-StringEditor
+StringEditor<br>
+<br>
+__StringBuilder__ : 모든 변경작업이 즉시 수행됩니다.<br>
+__StringEditor__ : 변경작업이 버퍼에 저장되고, `Commit`이 호출된 시점에 모두 적용됩니다.
 
 ```cs
 var input = ":z hello :world bye :world bye :z";
