@@ -26,7 +26,10 @@ static void Main(string[] args)
     var val1 = ":val2"; // 위험한 케이스
     var val2 = "SOME_VALUE";
 
+    // SOME_VALUE SOME_VALUE
     Console.WriteLine(BindWithStringBuilder(input, val1, val2));
+    
+    // :val2 SOME_VALUE
     Console.WriteLine(BindWithStringEditor(input, val1, val2));
 }
 ```
