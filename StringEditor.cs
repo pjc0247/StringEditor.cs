@@ -97,7 +97,8 @@ class StringEditor
                 dirty[i] = true;
             }
         }
-
+        
+        commands.Clear();
         return sb.ToString();
     }
 
